@@ -2,6 +2,7 @@ import './App.css'
 import { Button } from './components/ui/button'
 import HyperText from './components/ui/hyper-text'
 import IconCloud from './components/ui/icon-cloud'
+import Particles from './components/ui/particles';
 
 function App() {
   const slugs = [
@@ -58,7 +59,12 @@ function App() {
     />
 
     <IconCloud iconSlugs={slugs}/>
-
+    <Particles  className="absolute inset-0"
+        quantity={100}
+        ease={80}
+        color={"#000000"}
+        refresh
+      />
       
     </div>
   )
